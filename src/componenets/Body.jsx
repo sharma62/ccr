@@ -1,14 +1,13 @@
 import React from "react";
 import Card from "./Card";
 
-
 const Body = (props) => {
-  //   let courseList = [
-  //     { title: "Web Development 0 To 1", subTitle: "HTML, CSS, JS, REACT ",imgLink:"../assets/img/zero2one.png" },
-  // { title: "Full Stack DEvelopment", subTitle: "MERN" },
-  // { title: "Python", subTitle: "Complete Python" },
-  // { title: "DSA", subTitle: "Complete DSA" },
-  //   ];
+  let courseList = [
+    { title: "Web Development 0 To 1", subTitle: "HTML, CSS, JS, REACT " },
+    { title: "Full Stack DEvelopment", subTitle: "MERN" },
+    { title: "Python", subTitle: "Complete Python" },
+    // { title: "DSA", subTitle: "Complete DSA" },
+  ];
 
   return (
     <>
@@ -69,19 +68,42 @@ const Body = (props) => {
           </div>
         </div>
         {/* project review */}
-        <div className="container flex mx-auto bg-slate-900 ">
-          <div className="w-full h-screen">
-            <Card img ="../assets/pic_1.png"/>
-            
+        <div className="container flex mx-auto bg-slate-900 -mt-64">
+          <div className="w-full flex justify-between">
+            {courseList.map((list) => {
+              return (
+                <Card
+                  title={list.title}
+                  subTitle={list.subTitle}
+                  img={`/src/assets/pic_1.png`}
+                />
+              );
+            })}
+
+            {/* <Card
+              title={courseList.title}
+              subTitle={courseList.subTitle}
+              img={`/src/assets/pic_1.png`}
+            />
+            <Card
+              title={courseList.title}
+              subTitle={courseList.subTitle}
+              img={`/src/assets/pic_1.png`}
+            /> */}
           </div>
         </div>
       </section>
 
       {/* Programms */}
-      <section className="bg-zinc-400">
-        <h1 className=" text-center text-4xl md:text-5xl sm:text-4xl font-semibold p-5 mt-10">
-          Ambassador Program ?
+      <section className="bg-slate-900 pt-20">
+        <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+            {" "}
+            Ambassador Program ?
+          </span>{" "}
+          <span className="text-opacity-60"> Be a Next Leader</span>
         </h1>
+
         <div className="grid  container m-auto grid-cols-2 text-center gap-3 p-10">
           <div className="p-3 shadow-slate-500">
             <div className="m-auto border-white p-3">
@@ -101,7 +123,7 @@ const Body = (props) => {
           </div>
         </div>
       </section>
-     </>
+    </>
   );
 };
 

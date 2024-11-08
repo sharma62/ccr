@@ -1,8 +1,8 @@
 import React from "react";
 
 
-export default function Card({img}) {
-  console.log(img)
+export default function Card({title,subTitle,img}) {
+  console.log(title,subTitle,img)
   return (
     <>
       <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -16,9 +16,9 @@ export default function Card({img}) {
         <div class="px-5 pb-5">
           <a href="#">
             <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-              Web Devlopemen 0 TO 1 
+              {title} 
             </h5>
-              <small className="text-white">HTML, CSS, JS, REACT</small>
+              <small className="text-white">{subTitle}</small>
           </a>
           <div class="flex items-center mt-2.5 mb-5">
             <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -73,8 +73,8 @@ export default function Card({img}) {
             </span>
           </div>
           <div class="flex items-center justify-between">
-            <span class="text-3xl font-bold text-gray-900 dark:text-white">
-              Rs 2500 <span><small className="text-sm line-through">Rs 5000/-</small></span>
+            <span class="text-2xl font-bold text-gray-900 dark:text-white">
+              Rs 2500 <span><small className="text-sm line-through">Rs 5000/- </small> &nbsp; <span className="text-sm text-green-500">50 % OFF</span></span>
             </span>
             <a
               href="#"
@@ -83,6 +83,7 @@ export default function Card({img}) {
               Buy Now
             </a>
           </div>
+            <a href="" className="text-sm text-white">Read More...</a>
         </div>
       </div>
     </>
