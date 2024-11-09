@@ -10,7 +10,7 @@ const Body = (props) => {
       img: "https://raw.githubusercontent.com/sharma62/ccr/refs/heads/main/src/assets/pic_1.png",
     },
     {
-      title: "Python",
+      title: "Python Programming",
       subTitle: "Complete Python",
       img: "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2023/04/raspberry-lanza-editor-codigo-aprender-python-lenguaje-ia-3008158.jpg",
     },
@@ -82,7 +82,7 @@ const Body = (props) => {
         </div>
         {/* project review */}
         <div className="container flex mx-auto bg-slate-900 -mt-64 ">
-          <div className="w-full md:flex flex-col sm:flex-row justify-around text-xs">
+          <div className="w-full  md:flex flex-col sm:flex-row justify-around text-xs">
             {/* <Slider {...settings}> */}
             {courseList.map((list) => {
               return (
