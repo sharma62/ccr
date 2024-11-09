@@ -6,7 +6,7 @@ export default function Card({title,subTitle,img}) {
   console.log(title,subTitle,img)
   return (
     <>
-      <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 ">
+      <div class=" max-w-sm mx-auto mt-5 bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 sm:mt-5  ">
         <a href="#">
           <img
             class="p-8 rounded-t-lg h-72 w-full object-cover object-center"
