@@ -13,6 +13,7 @@ const CommonError = () => {
   )
 }
 
+
 const ComingSoon = () => {
   return (
     <>
@@ -26,6 +27,8 @@ const ComingSoon = () => {
   )
 }
 
-
+const handleBotton = () => {
+  console.log('clicked')
+}
 
 export { CommonError, ComingSoon }

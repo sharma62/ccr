@@ -1,17 +1,30 @@
 import React from "react";
 import Card from "./Card";
+// import Slider from "slick-carousel";
 
 const Body = (props) => {
   let courseList = [
-    { title: "Web Development 0 To 1", subTitle: "HTML, CSS, JS, REACT " },
-    { title: "Full Stack DEvelopment", subTitle: "MERN" },
-    { title: "Python", subTitle: "Complete Python" },
-    // { title: "DSA", subTitle: "Complete DSA" },
+    {
+      title: "Web Development 0 To 1",
+      subTitle: "HTML, CSS, JS, REACT ",
+      img: "/src/assets/pic_1.png",
+    },
+    {
+      title: "Python",
+      subTitle: "Complete Python",
+      img: "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2023/04/raspberry-lanza-editor-codigo-aprender-python-lenguaje-ia-3008158.jpg",
+    },
+    // { title: "Full Stack DEvelopment", subTitle: "MERN" },
+    {
+      title: "DSA",
+      subTitle: "Complete DSA",
+      img: "https://cdn.educba.com/academy/wp-content/uploads/2015/08/Data-Structures-and-Algorithms-C-1.jpg",
+    },
   ];
 
   return (
     <>
-      <section className="bg-slate-900 ">
+      <section className="bg-slate-900 select-none ">
         {/* Quote tag or slogan */}
         <div className=" grid grid-cols-1 text-center p-5">
           <div>
@@ -44,7 +57,7 @@ const Body = (props) => {
             <img
               src="https://app.svgator.com/assets/svgator.webapp/log-in-girl.svg"
               alt=""
-              className="w-100"
+              className="w-100 pointer-events-none"
             />
           </div>
           <div className=" md:w-4/12 m-auto grid grid-rows-4 grid-flow-col gap-4">
@@ -68,31 +81,26 @@ const Body = (props) => {
           </div>
         </div>
         {/* project review */}
-        <div className="container flex mx-auto bg-slate-900 -mt-64">
-          <div className="w-full flex justify-between">
-            {courseList.map((list) => {
-              return (
-                <Card
-                  title={list.title}
-                  subTitle={list.subTitle}
-                  img={`/src/assets/pic_1.png`}
-                />
-              );
-            })}
 
-            {/* <Card
-              title={courseList.title}
-              subTitle={courseList.subTitle}
-              img={`/src/assets/pic_1.png`}
-            />
-            <Card
-              title={courseList.title}
-              subTitle={courseList.subTitle}
-              img={`/src/assets/pic_1.png`}
-            /> */}
-          </div>
+        <div className="container flex mx-auto bg-slate-900 -mt-64 ">
+          
+            <div className="w-full flex md:row-span-4 justify-between  min-md:w-3/4 text-xs">
+              {/* <Slider {...settings}> */}
+              {courseList.map((list) => {
+                return (
+                  <Card
+                    title={list.title}
+                    subTitle={list.subTitle}
+                    img={list.img}
+                    // img={`/src/assets/pic_1.png`}
+                  />
+                );
+              })}
+              {/* </Slider> */}
+            </div>
+          
         </div>
-      </section>
+        <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_PInmemsl19YUoo" async>pay now </script> </form>      </section>
 
       {/* Programms */}
       <section className="bg-slate-900 pt-20">
@@ -123,6 +131,7 @@ const Body = (props) => {
           </div>
         </div>
       </section>
+      
     </>
   );
 };

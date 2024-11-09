@@ -40,7 +40,7 @@ const Nav = () => {
                             <Link to="/about"> About     </Link>
                         </li>
                         <li className='hover:font-bold transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:text-indigo-500 duration-300 '>
-                            <Link to="/meet"> Meet   </Link>
+                            <Link to="/meet"> Meet-Up   </Link>
                         </li>
                         <li className='hover:font-bold transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:text-indigo-500 duration-300 '>
                             <Link to="/event" > Events    </Link>
