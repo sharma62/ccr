@@ -1,14 +1,15 @@
 import React from "react";
 
 
+
 export default function Card({title,subTitle,img}) {
   console.log(title,subTitle,img)
   return (
     <>
-      <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 ">
         <a href="#">
           <img
-            class="p-8 rounded-t-lg"
+            class="p-8 rounded-t-lg h-72 w-full object-cover object-center"
             src={img}
             alt="product image"
           />
@@ -77,13 +78,13 @@ export default function Card({title,subTitle,img}) {
               Rs 2500 <span><small className="text-sm line-through">Rs 5000/- </small> &nbsp; <span className="text-sm text-green-500">50 % OFF</span></span>
             </span>
             <a
-              href="#"
+              href="https://rzp.io/rzp/8OWpwuWY"
               class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Buy Now
             </a>
           </div>
-            <a href="" className="text-sm text-white">Read More...</a>
+            <a href="#" className="text-sm text-white  hover:text-blue-500">Read More...</a>
         </div>
       </div>
     </>
