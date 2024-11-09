@@ -15,11 +15,11 @@ const Body = (props) => {
       img: "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2023/04/raspberry-lanza-editor-codigo-aprender-python-lenguaje-ia-3008158.jpg",
     },
     // { title: "Full Stack DEvelopment", subTitle: "MERN" },
-    {
-      title: "DSA",
-      subTitle: "Complete DSA",
-      img: "https://cdn.educba.com/academy/wp-content/uploads/2015/08/Data-Structures-and-Algorithms-C-1.jpg",
-    },
+    // {
+    //   title: "DSA",
+    //   subTitle: "Complete DSA",
+    //   img: "https://cdn.educba.com/academy/wp-content/uploads/2015/08/Data-Structures-and-Algorithms-C-1.jpg",
+    // },
   ];
 
   return (
@@ -35,8 +35,7 @@ const Body = (props) => {
                             </span>
                             all the time, people think that you're busy."
                         </blockquote> */}
-                        
-          </div> 
+          </div>
           <div>
             <h1 className="font-bold text-6xl sm:text-7xl md:text-8xl lg:text-9xl my-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               HeLLo Folks
@@ -82,26 +81,32 @@ const Body = (props) => {
           </div>
         </div>
         {/* project review */}
-
         <div className="container flex mx-auto bg-slate-900 -mt-64 ">
-          
-            <div className="w-full flex md:row-span-4 justify-between  min-md:w-3/4 text-xs">
-              {/* <Slider {...settings}> */}
-              {courseList.map((list) => {
-                return (
-                  <Card
-                    title={list.title}
-                    subTitle={list.subTitle}
-                    img={list.img}
-                    // img={`/src/assets/pic_1.png`}
-                  />
-                );
-              })}
-              {/* </Slider> */}
-            </div>
-          
+          <div className="w-full md:flex flex-col sm:flex-row justify-around text-xs">
+            {/* <Slider {...settings}> */}
+            {courseList.map((list) => {
+              return (
+                <Card
+                  title={list.title}
+                  subTitle={list.subTitle}
+                  img={list.img}
+                  // img={`/src/assets/pic_1.png`}
+                />
+              );
+            })}
+            {/* </Slider> */}
+          </div>
         </div>
-        <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_PInmemsl19YUoo" async>pay now </script> </form>      </section>
+        <form>
+          <script
+            src="https://checkout.razorpay.com/v1/payment-button.js"
+            data-payment_button_id="pl_PInmemsl19YUoo"
+            async
+          >
+            pay now{" "}
+          </script>{" "}
+        </form>{" "}
+      </section>
 
       {/* Programms */}
       <section className="bg-slate-900 pt-20">
@@ -132,7 +137,6 @@ const Body = (props) => {
           </div>
         </div>
       </section>
-      
     </>
   );
 };
