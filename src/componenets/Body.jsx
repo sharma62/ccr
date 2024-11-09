@@ -22,7 +22,8 @@ const Body = (props) => {
                             </span>
                             all the time, people think that you're busy."
                         </blockquote> */}
-          </div>
+                        
+          </div> 
           <div>
             <h1 className="font-bold text-6xl sm:text-7xl md:text-8xl lg:text-9xl my-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               HeLLo Folks
