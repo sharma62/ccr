@@ -7,7 +7,7 @@ const Body = (props) => {
     {
       title: "Web Development 0 To 1",
       subTitle: "HTML, CSS, JS, REACT ",
-      img: "/src/assets/pic_1.png",
+      img: "https://raw.githubusercontent.com/sharma62/ccr/refs/heads/main/src/assets/pic_1.png",
     },
     {
       title: "Python",
