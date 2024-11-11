@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, HashRouter } from 'react-router-dom';
 import './App.css';
 import Body from './componenets/Body';
 import Footer from './componenets/Footer';
@@ -13,7 +13,8 @@ function App() {
   const appName = 'comCommunityRoom.org'
   return (
     <>
-      <Router>
+      {/* <Router> */}
+      <HashRouter>
         {/* nav */}
         <Nav />
         <Routes>
@@ -25,8 +26,8 @@ function App() {
           <Route path={`*`} element={<ComingSoon/>} />
         </Routes>
         <Footer app_name={appName}/>
-
-      </Router>
+        </HashRouter>
+      {/* </Router> */}
     </>
   );
 }
